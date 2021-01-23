@@ -20,7 +20,7 @@ public class BlockFabrication extends Block implements ITileEntityProvider {
 		this.setBlockTextureName(Main.MODID + ":fabrications/" + texture);
 		this.setCreativeTab(Main.tabMModIndustryBlock);
 		GameRegistry.registerBlock(this, name);
-		GameRegistry.registerTileEntity(TileEntityFabrication.class, texture);
+		GameRegistry.registerTileEntity(TileEntityFabrication.class, name);
 		
 	}
 	

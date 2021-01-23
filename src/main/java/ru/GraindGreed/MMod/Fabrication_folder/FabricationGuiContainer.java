@@ -16,7 +16,8 @@ public class FabricationGuiContainer extends GuiContainer {
 	private static final ResourceLocation texture = new ResourceLocation(Main.MODID.toLowerCase(),
 			"textures/gui/Test GUI.png");
 	
-	public FabricationGuiContainer(InventoryPlayer inventory_player, TileEntityFabrication tile_entity) {
+	public FabricationGuiContainer(final InventoryPlayer inventory_player,
+			final TileEntityFabrication tile_entity) {
 		
 		super(new FabricationContainer(inventory_player, tile_entity));
 		this.inventory_player = inventory_player;

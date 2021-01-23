@@ -24,7 +24,7 @@ public class FabricationRecipes {
 	
 	static {
 		
-		addRecipe(new ItemStack(Main.TinIgnot, 1, 0), new ItemStack(Main.TinDust, 1, 1));
+		addRecipe(new ItemStack(Main.TinIgnot), new ItemStack(Main.TinDust));
 		
 	}
 	

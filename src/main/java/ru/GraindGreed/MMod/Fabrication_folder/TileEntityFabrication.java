@@ -1,5 +1,6 @@
 package ru.GraindGreed.MMod.Fabrication_folder;
 
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -17,7 +18,7 @@ public class TileEntityFabrication extends TileEntity implements IInventory {
 	private FabricationRecipes.Recipe recipe = null;
 	private String custom_name;
 	
-	public TileEntityFabrication( ) {}
+	public TileEntityFabrication() {}
 	
 	@Override
 	public void updateEntity() {
@@ -29,7 +30,7 @@ public class TileEntityFabrication extends TileEntity implements IInventory {
 			if (recipe == null) {
 				
 				recipe = FabricationRecipes.getRecipe(input);
-				if (recipe == null) {
+				if (recipe != null) {
 					
 					setInventorySlotContents(1, recipe.output.copy());
 					
