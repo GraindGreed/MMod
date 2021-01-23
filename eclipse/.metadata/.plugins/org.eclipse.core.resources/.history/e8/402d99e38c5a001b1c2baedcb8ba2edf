@@ -1,0 +1,51 @@
+package ru.GraindGreed.MMod;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
+
+@Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION)
+
+public class Main {
+	
+	public static final String MODID = "MMod";
+	public static final String MODNAME = "MMod Test";
+	public static final String VERSION = "0.0.3";
+	
+	public static Block TinOre, CopperOre, AluminiumOre, NickelOre, TitaniumOre, UraniumOre, MatterOre;
+	
+	public static final CreativeTabs tabMModIndustryBlock = new CreativeTabs("tabMModIndustryBlock") {
+		public Item getTabIconItem() {
+			return Item.getItemFromBlock(UraniumOre);
+		}
+	};
+	
+	public static final CreativeTabs tabMModIndustryTools = new CreativeTabs("tabMModIndustryTools") {
+		public Item getTabIconItem() {
+			return Item.getItemFromBlock(Blocks.anvil);
+		}
+	};
+	
+	public static Item TitaniumPickaxe;
+	
+	@EventHandler
+	public void preLoad(FMLPreInitializationEvent event) {
+		
+		TinOre = new BlockOre(Material.rock, "Tin Ore", "Tin Ore Texture", 1, 2.0F);
+		CopperOre = new BlockOre(Material.rock, "Copper Ore", "Copper Ore Texture", 1, 2.0F);
+		AluminiumOre = new BlockOre(Material.rock, "Aluminium Ore", "Aluminium Ore Texture", 1, 1.5F);
+		NickelOre = new BlockOre(Material.rock, "Nickel Ore", "Nickel Ore Texture", 2, 3.0F);
+		TitaniumOre = new BlockOre(Material.rock, "Titanium Ore", "Titanium Ore Texture", 3, 4.0F);
+		UraniumOre = new BlockOre(Material.rock, "Uranium Ore", "Uranium Ore Texture", 2, 3.5F);
+		MatterOre = new BlockOre(Material.rock, "Inclusion of Matter", "Inclusion of Matter Texture", 4, 5.0F);
+		
+		TitaniumPickaxe = new PickaxeMMod("Titanium Pickaxe", "Titanium Pickaxe Texture");
+		
+	}
+
+}

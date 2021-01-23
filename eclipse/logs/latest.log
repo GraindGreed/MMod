@@ -1,0 +1,30 @@
+[18:08:05] [main/INFO]: Setting user: Player945
+[18:08:08] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:08:21] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MMod Test
+[18:08:22] [Sound Library Loader/INFO]: Sound engine started
+[18:08:25] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[18:08:25] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[18:08:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MMod Test
+[18:08:25] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[18:08:25] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[18:08:26] [Sound Library Loader/INFO]: Sound engine started
+[18:08:33] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:08:33] [Server thread/INFO]: Generating keypair
+[18:08:34] [Server thread/INFO]: Preparing start region for level 0
+[18:08:35] [Server thread/INFO]: Preparing spawn area: 79%
+[18:08:35] [Server thread/INFO]: Changing view distance to 8, from 10
+[18:08:36] [Server thread/INFO]: Player945[local:E:c37194fa] logged in with entity id 295 at (573.0862529985463, 69.0, -380.2771069500631)
+[18:08:36] [Server thread/INFO]: Player945 присоединился к игре
+[18:08:41] [Server thread/INFO]: Player945 заработал достижение [Проверить карманы]
+[18:08:42] [Client thread/INFO]: [CHAT] Player945 заработал достижение [Проверить карманы]
+[18:09:13] [Server thread/INFO]: Saving and pausing game...
+[18:09:13] [Server thread/INFO]: Saving chunks for level 'Новый мир'/Overworld
+[18:09:13] [Server thread/INFO]: Saving chunks for level 'Новый мир'/Nether
+[18:09:13] [Server thread/INFO]: Saving chunks for level 'Новый мир'/The End
+[18:09:22] [Server thread/INFO]: Stopping server
+[18:09:22] [Server thread/INFO]: Saving players
+[18:09:22] [Server thread/INFO]: Saving worlds
+[18:09:22] [Server thread/INFO]: Saving chunks for level 'Новый мир'/Overworld
+[18:09:22] [Server thread/INFO]: Saving chunks for level 'Новый мир'/Nether
+[18:09:22] [Server thread/INFO]: Saving chunks for level 'Новый мир'/The End
+[18:09:23] [Client thread/INFO]: Stopping!
