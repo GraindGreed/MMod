@@ -32,6 +32,7 @@ public class FabricationRecipes {
 		addRecipe(new ItemStack(Main.NickelIgnot), new ItemStack(Main.NickelDust), 100);
 		addRecipe(new ItemStack(Main.TitaniumIgnot), new ItemStack(Main.TitaniumDust), 100);
 		addRecipe(new ItemStack(Main.UraniumIgnot), new ItemStack(Main.UraniumDust), 100);
+		addRecipe(new ItemStack(Main.BronseIgnot), new ItemStack(Main.BronseDust), 100);
 		
 	}
 	

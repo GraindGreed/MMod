@@ -16,7 +16,7 @@ public class PickaxeMMod extends ItemPickaxe {
 		this.setTextureName(Main.MODID + ":tools_texture/" + texture);
 		this.setUnlocalizedName(name);
 		GameRegistry.registerItem(this, name);
-		GameRegistry.addRecipe(new ItemStack(this, 1),
+		GameRegistry.addRecipe(new ItemStack(this),
 				
 				new Object[] {
 						

@@ -21,17 +21,17 @@ public class Main {
 	public static final String 
 	MODID = "MMod",
 	MODNAME = "MMod Test",
-	VERSION = "0.2.5";
+	VERSION = "0.3.0";
 	
 	@Mod.Instance(MODID)
 	public static Main instance;
 	
 	public static Block TinOre, CopperOre, AluminiumOre, NickelOre, TitaniumOre, UraniumOre, MatterOre,
-	Fabrication, TinBlock, CopperBlock, AluminiumBlock, NickelBlock, TitaniumBlock;
+	Fabrication, TinBlock, CopperBlock, AluminiumBlock, NickelBlock, TitaniumBlock, BronseBlock;
 	
 	public static Item TinIgnot, CopperIgnot, AluminiumIgnot, NickelIgnot, TitaniumIgnot, UraniumIgnot,
-	MatterClot, TitaniumPickaxe, TinDust, CopperDust, AluminiumDust, NickelDust, TitaniumDust,
-	UraniumDust;
+	MatterClot, TitaniumPickaxe, TinDust, CopperDust, AluminiumDust, NickelDust, TitaniumDust, BronseDust,
+	UraniumDust, BronseIgnot;
 	
 	public static final CreativeTabs tabMModIndustryBlock = new CreativeTabs("tabMModIndustryBlock") {
 		public Item getTabIconItem() {
@@ -58,18 +58,21 @@ public class Main {
 		
 		TinIgnot = new IgnotMMod("Tin Ignot", "Tin Ignot Texture");
 		CopperIgnot = new IgnotMMod("Copper Ignot", "Copper Ignot Texture");
+		BronseIgnot = new IgnotMMod("Bronse Ignot", "Bronse Ignot Texture");
 		AluminiumIgnot = new IgnotMMod("Aluminium Ignot", "Aluminium Ignot Texture");
 		NickelIgnot = new IgnotMMod("Nickel Ignot", "Nickel Ignot Texture");
 		TitaniumIgnot = new IgnotMMod("Titanium Ignot", "Titanium Ignot Texture");
 		UraniumIgnot = new IgnotMMod("Uranium Ignot", "Uranium Ignot Texture");
 		MatterClot = new IgnotMMod("Matter Clot", "Matter Clot Texture");
 		
-		TinDust = new DustMMod("Tin Dust", "Tin Dust Texture");
-		CopperDust = new DustMMod("Copper Dust", "Copper Dust Texture");
-		AluminiumDust = new DustMMod("Aluminium Dust", "Aluminium Dust Texture");
-		NickelDust = new DustMMod("Nickel Dust", "Nickel Dust Texture");
-		TitaniumDust = new DustMMod("Titanium Dust", "Titanium Dust Texture");
+		TinDust = new DustMMod("Tin Dust", "Tin Dust Texture", Main.TinIgnot);
+		CopperDust = new DustMMod("Copper Dust", "Copper Dust Texture", Main.CopperIgnot);
+		AluminiumDust = new DustMMod("Aluminium Dust", "Aluminium Dust Texture", Main.AluminiumIgnot);
+		NickelDust = new DustMMod("Nickel Dust", "Nickel Dust Texture", Main.NickelIgnot);
+		TitaniumDust = new DustMMod("Titanium Dust", "Titanium Dust Texture", Main.TitaniumIgnot);
 		UraniumDust = new DustMMod("Uranium Dust", "Uranium Dust Texture");
+		BronseDust  = new DustMMod("Bronse Dust", "Bronse Dust Texture", Main.BronseIgnot,
+				Main.TinDust, Main.CopperDust);
 		
 		TinOre = new BlockOre("Tin Ore", "Tin Ore Texture", 1, 2.0F,
 				new ItemStack(TinIgnot, 1), 1.0F);
