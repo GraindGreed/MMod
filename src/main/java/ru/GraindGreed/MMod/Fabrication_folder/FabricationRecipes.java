@@ -11,10 +11,12 @@ public class FabricationRecipes {
 	public static class Recipe {
 		
 		public final ItemStack input, output;
-		public Recipe(ItemStack input, ItemStack output) {
+		public final int time;
+		public Recipe(ItemStack input, ItemStack output, int time) {
 			
 			this.input = input;
 			this.output = output;
+			this.time = time;
 			
 		}
 		
@@ -24,13 +26,18 @@ public class FabricationRecipes {
 	
 	static {
 		
-		addRecipe(new ItemStack(Main.TinIgnot), new ItemStack(Main.TinDust));
+		addRecipe(new ItemStack(Main.TinIgnot), new ItemStack(Main.TinDust), 100);
+		addRecipe(new ItemStack(Main.CopperIgnot), new ItemStack(Main.CopperDust), 100);
+		addRecipe(new ItemStack(Main.AluminiumIgnot), new ItemStack(Main.AluminiumDust), 100);
+		addRecipe(new ItemStack(Main.NickelIgnot), new ItemStack(Main.NickelDust), 100);
+		addRecipe(new ItemStack(Main.TitaniumIgnot), new ItemStack(Main.TitaniumDust), 100);
+		addRecipe(new ItemStack(Main.UraniumIgnot), new ItemStack(Main.UraniumDust), 100);
 		
 	}
 	
-	public static boolean addRecipe(ItemStack input, ItemStack output) {
+	public static boolean addRecipe(ItemStack input, ItemStack output, int time) {
 		
-		return list.add(new Recipe(input, output));
+		return list.add(new Recipe(input, output, time));
 		
 	}
 	

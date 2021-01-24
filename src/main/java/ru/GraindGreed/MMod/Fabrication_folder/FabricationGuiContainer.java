@@ -14,7 +14,7 @@ public class FabricationGuiContainer extends GuiContainer {
 	final TileEntityFabrication tile_entity;
 	
 	private static final ResourceLocation texture = new ResourceLocation(Main.MODID.toLowerCase(),
-			"textures/gui/Test GUI.png");
+			"textures/gui/Test GUI anim.png");
 	
 	public FabricationGuiContainer(final InventoryPlayer inventory_player,
 			final TileEntityFabrication tile_entity) {
@@ -32,7 +32,7 @@ public class FabricationGuiContainer extends GuiContainer {
 				8, 6, 4210752);
 		this.fontRendererObj.drawString(this.inventory_player.hasCustomInventoryName() ?
 				this.inventory_player.getInventoryName() : I18n.format(this.inventory_player.getInventoryName(),
-				new Object[0]), 8, this.ySize - 96 + 2, 4210752);
+				new Object[0]), 8, this.ySize - 94, 4210752);
 		
 	}
 	
@@ -42,6 +42,13 @@ public class FabricationGuiContainer extends GuiContainer {
 		GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
 		this.mc.getTextureManager().bindTexture(texture);
 		this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, this.xSize, this.ySize);
+		
+		if (tile_entity.time_max > 0) {
+			
+			this.drawTexturedModalRect(this.guiLeft + 78, this.guiTop + 33, 176, 0,
+					22 - (int)((float)(tile_entity.time / (float)tile_entity.time_max) * 22F), 17);
+			
+		}
 		
 	}
 

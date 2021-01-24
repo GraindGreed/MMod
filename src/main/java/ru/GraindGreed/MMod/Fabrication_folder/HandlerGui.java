@@ -13,8 +13,13 @@ public class HandlerGui implements IGuiHandler {
 		TileEntity tile_entity = world.getTileEntity(x, y, z);
 		switch(ID) {
 		
-		case 0: return new FabricationContainer(player.inventory, (TileEntityFabrication)tile_entity);
-		default: return null;
+		case 0: 
+			
+			return new FabricationContainer(player.inventory, (TileEntityFabrication)tile_entity);
+			
+		default: 
+			
+			return null;
 		
 		}
 	
@@ -26,8 +31,13 @@ public class HandlerGui implements IGuiHandler {
 		TileEntity tile_entity = world.getTileEntity(x, y, z);
 		switch(ID) {
 		
-			case 0: return new FabricationGuiContainer(player.inventory, (TileEntityFabrication)tile_entity);
-			default: return null;
+			case 0:
+				
+				return new FabricationGuiContainer(player.inventory, (TileEntityFabrication)tile_entity);
+				
+			default:
+				
+				return null;
 		
 		}
 		

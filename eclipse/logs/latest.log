@@ -1,31 +1,32 @@
-[21:40:49] [main/INFO]: Setting user: Player14
-[21:40:56] [Client thread/INFO]: LWJGL Version: 2.9.1
-[21:41:19] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MMod Test
-[21:41:21] [Sound Library Loader/INFO]: Sound engine started
-[21:41:25] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[21:41:25] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[21:41:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MMod Test
-[21:41:26] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[21:41:26] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[21:41:27] [Sound Library Loader/INFO]: Sound engine started
-[21:41:37] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[21:41:37] [Server thread/INFO]: Generating keypair
-[21:41:38] [Server thread/INFO]: Preparing start region for level 0
-[21:41:40] [Server thread/INFO]: Preparing spawn area: 4%
-[21:41:41] [Server thread/INFO]: Preparing spawn area: 53%
-[21:41:42] [Server thread/INFO]: Changing view distance to 8, from 10
-[21:41:44] [Server thread/INFO]: Player14[local:E:291df27c] logged in with entity id 291 at (-80.3846942605135, 76.0, 305.3764539102756)
-[21:41:44] [Server thread/INFO]: Player14 присоединился к игре
-[21:42:57] [Server thread/INFO]: Player14 заработал достижение [Проверить карманы]
-[21:42:57] [Client thread/INFO]: [CHAT] Player14 заработал достижение [Проверить карманы]
-[21:42:59] [Server thread/INFO]: Saving and pausing game...
-[21:42:59] [Server thread/INFO]: Saving chunks for level 'Новый мир'/Overworld
-[21:42:59] [Server thread/INFO]: Saving chunks for level 'Новый мир'/Nether
-[21:42:59] [Server thread/INFO]: Saving chunks for level 'Новый мир'/The End
-[21:43:00] [Server thread/INFO]: Stopping server
-[21:43:00] [Server thread/INFO]: Saving players
-[21:43:00] [Server thread/INFO]: Saving worlds
-[21:43:00] [Server thread/INFO]: Saving chunks for level 'Новый мир'/Overworld
-[21:43:00] [Server thread/INFO]: Saving chunks for level 'Новый мир'/Nether
-[21:43:00] [Server thread/INFO]: Saving chunks for level 'Новый мир'/The End
-[21:43:23] [Client thread/INFO]: Stopping!
+[14:58:25] [main/INFO]: Setting user: Player317
+[14:58:44] [Client thread/INFO]: LWJGL Version: 2.9.1
+[14:59:31] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MMod Test
+[14:59:33] [Sound Library Loader/INFO]: Sound engine started
+[14:59:37] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[14:59:37] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[14:59:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MMod Test
+[14:59:38] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[14:59:38] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[14:59:39] [Sound Library Loader/INFO]: Sound engine started
+[14:59:58] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[14:59:58] [Server thread/INFO]: Generating keypair
+[14:59:59] [Server thread/INFO]: Preparing start region for level 0
+[15:00:00] [Server thread/INFO]: Preparing spawn area: 4%
+[15:00:01] [Server thread/INFO]: Preparing spawn area: 47%
+[15:00:02] [Server thread/INFO]: Preparing spawn area: 77%
+[15:00:03] [Server thread/INFO]: Changing view distance to 8, from 10
+[15:00:04] [Server thread/INFO]: Player317[local:E:3d0f07ac] logged in with entity id 259 at (-67.94764128525796, 72.0, 265.0547096423907)
+[15:00:04] [Server thread/INFO]: Player317 присоединился к игре
+[15:00:49] [Server thread/INFO]: Player317 заработал достижение [Проверить карманы]
+[15:00:49] [Client thread/INFO]: [CHAT] Player317 заработал достижение [Проверить карманы]
+[15:01:40] [Server thread/INFO]: Saving and pausing game...
+[15:01:40] [Server thread/INFO]: Saving chunks for level 'Новый мир'/Overworld
+[15:01:40] [Server thread/INFO]: Saving chunks for level 'Новый мир'/Nether
+[15:01:40] [Server thread/INFO]: Saving chunks for level 'Новый мир'/The End
+[15:01:41] [Server thread/INFO]: Stopping server
+[15:01:41] [Server thread/INFO]: Saving players
+[15:01:41] [Server thread/INFO]: Saving worlds
+[15:01:41] [Server thread/INFO]: Saving chunks for level 'Новый мир'/Overworld
+[15:01:41] [Server thread/INFO]: Saving chunks for level 'Новый мир'/Nether
+[15:01:41] [Server thread/INFO]: Saving chunks for level 'Новый мир'/The End
+[15:01:44] [Client thread/INFO]: Stopping!

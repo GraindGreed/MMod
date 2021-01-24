@@ -30,7 +30,8 @@ public class Main {
 	Fabrication, TinBlock, CopperBlock, AluminiumBlock, NickelBlock, TitaniumBlock;
 	
 	public static Item TinIgnot, CopperIgnot, AluminiumIgnot, NickelIgnot, TitaniumIgnot, UraniumIgnot,
-	MatterClot, TitaniumPickaxe, TinDust;
+	MatterClot, TitaniumPickaxe, TinDust, CopperDust, AluminiumDust, NickelDust, TitaniumDust,
+	UraniumDust;
 	
 	public static final CreativeTabs tabMModIndustryBlock = new CreativeTabs("tabMModIndustryBlock") {
 		public Item getTabIconItem() {
@@ -64,6 +65,11 @@ public class Main {
 		MatterClot = new IgnotMMod("Matter Clot", "Matter Clot Texture");
 		
 		TinDust = new DustMMod("Tin Dust", "Tin Dust Texture");
+		CopperDust = new DustMMod("Copper Dust", "Copper Dust Texture");
+		AluminiumDust = new DustMMod("Aluminium Dust", "Aluminium Dust Texture");
+		NickelDust = new DustMMod("Nickel Dust", "Nickel Dust Texture");
+		TitaniumDust = new DustMMod("Titanium Dust", "Titanium Dust Texture");
+		UraniumDust = new DustMMod("Uranium Dust", "Uranium Dust Texture");
 		
 		TinOre = new BlockOre("Tin Ore", "Tin Ore Texture", 1, 2.0F,
 				new ItemStack(TinIgnot, 1), 1.0F);

@@ -43,9 +43,7 @@ public class BlockFabrication extends Block implements ITileEntityProvider {
 			float hitY, float hitZ) {
 		
 		if (!world.isRemote && world.getTileEntity(x, y, z) instanceof TileEntityFabrication)
-			
 			player.openGui(Main.instance, 0, world, x, y, z);
-		
 		return true;
 		
 	}

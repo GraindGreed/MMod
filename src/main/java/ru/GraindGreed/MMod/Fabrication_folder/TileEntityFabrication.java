@@ -17,49 +17,70 @@ public class TileEntityFabrication extends TileEntity implements IInventory {
 			sideSlots = new int[] {0};
 	private FabricationRecipes.Recipe recipe = null;
 	private String custom_name;
+	public int time = 0, time_max = 0;
 	
 	public TileEntityFabrication() {}
 	
 	@Override
 	public void updateEntity() {
 		
+		if (worldObj.isRemote)
+			return;
 		ItemStack input = getStackInSlot(0);
 		ItemStack output = getStackInSlot(1);
-		if (input != null && output == null) {
+		
+		if (time == 0) {
 			
-			if (recipe == null) {
+			if (recipe != null) {
 				
-				recipe = FabricationRecipes.getRecipe(input);
-				if (recipe != null) {
+				if (output == null) {
 					
 					setInventorySlotContents(1, recipe.output.copy());
+					recipe = null;
+					time_max = 0;
+					
+				} else if (output.isItemEqual(recipe.output) && 
+						ItemStack.areItemStackTagsEqual(output, recipe.output) &&
+						recipe.output.stackSize + output.stackSize <= 64) {
+					
+					output.stackSize += recipe.output.stackSize;
+					setInventorySlotContents(1, output);
+					recipe = null;
+					time_max = 0;
 					
 				}
 				
 			} else {
 				
-				input.stackSize -= recipe.input.stackSize;
-				if (input.stackSize <= 0)
-					setInventorySlotContents(0, null);
+				recipe = FabricationRecipes.getRecipe(input);
 				
-				else
-					setInventorySlotContents(0, input);
-				
-				recipe = null;
+				if (recipe != null) {
+					
+					time_max = time = recipe.time;
+					
+					if (input != null && input.getItem().hasContainerItem(input)) {
+						
+						setInventorySlotContents(0, input.getItem().getContainerItem(input));
+						
+					} else {
+						
+						input.stackSize -= recipe.input.stackSize;
+						
+						if (input.stackSize <= 0)
+							setInventorySlotContents(0, null);
+						
+						else
+							setInventorySlotContents(0, input);
+						
+					}
+					
+				}
 				
 			}
 			
-		} else if (input == null) {
+		} else {
 			
-			if (recipe != null) {
-				
-				if (output != null)
-					setInventorySlotContents(1, null);
-				
-				if (recipe != null) 
-					recipe = null;
-				
-			}
+			--time;
 			
 		}
 		
@@ -178,14 +199,14 @@ public class TileEntityFabrication extends TileEntity implements IInventory {
 	@Override
 	public String getInventoryName() {
 		
-		return "inventory_fabrication";
+		return hasCustomInventoryName() ? custom_name : "inventory_fabrication";
 		
 	}
 	
 	@Override
 	public boolean hasCustomInventoryName() {
 		
-		return false;
+		return custom_name != null && custom_name.length() > 0;
 		
 	}
 	
