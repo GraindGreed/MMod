@@ -20,7 +20,16 @@ public class FabricationContainer extends Container {
 		tile_entity.openInventory();
 		
 		this.addSlotToContainer(new Slot(tile_entity, 0, 50, 33));
-		this.addSlotToContainer(new Slot(tile_entity, 1, 110, 33));
+		this.addSlotToContainer(new Slot(tile_entity, 1, 110, 33) {
+			
+			@Override
+			public boolean isItemValid (ItemStack itemStack) {
+				
+				return false;
+				
+			}
+			
+		});
 		
 		int j;
 		int k;

@@ -21,7 +21,7 @@ public class Main {
 	public static final String 
 	MODID = "MMod",
 	MODNAME = "MMod Test",
-	VERSION = "0.3.0";
+	VERSION = "0.3.1";
 	
 	@Mod.Instance(MODID)
 	public static Main instance;
@@ -100,6 +100,7 @@ public class Main {
 		NickelBlock = new BlockBlock("Nickel Block", "Nickel Block Texture", 1.5F, 1, Main.NickelIgnot);
 		TitaniumBlock = new BlockBlock("Titanium Block", "Titanium Block Texture", 1.5F, 1,
 				Main.TitaniumIgnot);
+		BronseBlock = new BlockBlock("Bronse Block", "Bronse Block Texture", 1.5F, 1, Main.BronseIgnot);
 		
 		TitaniumPickaxe = new PickaxeMMod("Titanium Pickaxe", "Titanium Pickaxe Texture", Main.TitaniumIgnot);
 		

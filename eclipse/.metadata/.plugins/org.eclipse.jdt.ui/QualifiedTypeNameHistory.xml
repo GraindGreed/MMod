@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.jcraft.jorbis.Block"/>
     <fullyQualifiedTypeName name="com.sun.prism.Material"/>
-    <fullyQualifiedTypeName name="cpw.mods.fml.relauncher.Side"/>
     <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
     <fullyQualifiedTypeName name="net.minecraft.server.MinecraftServer"/>
     <fullyQualifiedTypeName name="net.minecraft.init.Items"/>
@@ -25,4 +24,6 @@
     <fullyQualifiedTypeName name="ru.GraindGreed.MMod.Fabrication_folder.FabricationRecipes.Recipe"/>
     <fullyQualifiedTypeName name="ru.GraindGreed.MMod.Main"/>
     <fullyQualifiedTypeName name="cpw.mods.fml.common.registry.GameRegistry"/>
+    <fullyQualifiedTypeName name="net.minecraft.inventory.ICrafting"/>
+    <fullyQualifiedTypeName name="cpw.mods.fml.relauncher.Side"/>
 </qualifiedTypeNameHistroy>
