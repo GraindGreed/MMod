@@ -1,0 +1,51 @@
+package ru.GraindGreed.MMod.Slot;
+
+import javax.annotation.Nonnull;
+
+import net.minecraft.item.ItemStack;
+
+public class SlotBase extends SlotItemHandler {
+	
+	public final int handlerIndex;
+	public final IItemHandlerAdv itemHandler;
+	
+	public SlotBase(IItemHandlerAdv itemHandler, int slotIndex, int posX, int posY) {
+		
+		super(itemHandler, slotIndex, posX, posY);
+		this.handlerIndex = slotIndex;
+		this.itemHandler = itemHandler;
+		
+	}
+	
+	public boolean canShift() {
+		
+		return true;
+		
+	}
+	
+	@Override
+	public boolean isItemValid(@Nonnull ItemStack stack) {
+		
+		return itemHandler.canSet(handlerIndex, stack);
+		
+	}
+	
+	public ItemStack insert(ItemStack stack, boolean simulate) {
+		
+		return getItemHandler().InsertItem(handlerIndex, stack, simulate);
+		
+	}
+	
+	@Override
+	public void onSlotChanged() {
+		
+		super.onSlotChanged();
+		if (ItemHandler instanceof ItemHandlerSimple) {
+			
+			((ItemHandlerSimple) itemHandler).setStackInSlot(HandlerIndex, getStack());
+			
+		}
+		
+	}
+
+}
