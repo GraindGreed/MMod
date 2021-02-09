@@ -1,7 +1,0 @@
-package ru.GraindGreed.MMod;
-
-import net.minecraft.item.Item;
-
-public class PickaxeMMod extends Item {
-
-}

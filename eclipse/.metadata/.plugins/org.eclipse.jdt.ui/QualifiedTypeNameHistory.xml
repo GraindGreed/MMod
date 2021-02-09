@@ -11,7 +11,6 @@
     <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
     <fullyQualifiedTypeName name="net.minecraft.nbt.NBTTagCompound"/>
     <fullyQualifiedTypeName name="net.minecraft.nbt.NBTTagList"/>
-    <fullyQualifiedTypeName name="net.minecraft.inventory.Slot"/>
     <fullyQualifiedTypeName name="com.sun.xml.internal.ws.api.server.Container"/>
     <fullyQualifiedTypeName name="net.minecraft.inventory.Container"/>
     <fullyQualifiedTypeName name="net.minecraft.client.resources.I18n"/>
@@ -26,4 +25,5 @@
     <fullyQualifiedTypeName name="cpw.mods.fml.common.registry.GameRegistry"/>
     <fullyQualifiedTypeName name="net.minecraft.inventory.ICrafting"/>
     <fullyQualifiedTypeName name="cpw.mods.fml.relauncher.Side"/>
+    <fullyQualifiedTypeName name="net.minecraft.inventory.Slot"/>
 </qualifiedTypeNameHistroy>

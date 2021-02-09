@@ -1,7 +1,0 @@
-package ru.GraindGreed.MMod;
-
-import net.minecraft.block.Block;
-
-public class BlockBlock extends Block {
-
-}

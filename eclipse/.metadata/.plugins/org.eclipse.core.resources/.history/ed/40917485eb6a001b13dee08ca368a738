@@ -1,0 +1,30 @@
+package ru.GraindGreed.Slots;
+
+import javax.annotation.Nonnull;
+
+import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.Slot;
+import net.minecraft.item.ItemStack;
+
+public class SlotBase extends Slot{
+
+	public SlotBase(IInventory newInventory, int slotID, int posX, int posY) {
+		
+		super(newInventory, slotID, posX, posY);
+		
+	}
+	
+	public boolean canShift() {
+		
+		return true;
+		
+	}
+	
+	@Override
+	public boolean isItemValid(@Nonnull ItemStack itemstack) {
+		
+		return true;
+		
+	}
+
+}
